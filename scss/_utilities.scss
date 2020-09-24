@@ -1,0 +1,29 @@
+.row {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.profile-image {
+	height: 2rem;
+	width: 2rem;
+	object-fit: cover;
+	border: 1px solid $primary;
+	border-radius: 10px;
+}
+
+.collaborator {
+	display: flex;
+	margin-right: 0.5rem;
+
+	.collaborator__image {
+		&:nth-child(1) {
+			transform: translateX(140%);
+			z-index: 1;
+		}
+
+		&:nth-child(2) {
+			transform: translateX(70%);
+		}
+	}
+}

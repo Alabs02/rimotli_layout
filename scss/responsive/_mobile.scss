@@ -1,0 +1,178 @@
+@media (max-width: 600px) {
+    nav#nav-mobile {
+        display: flex;
+        justify-content: space-between;
+        padding: .3rem .8rem;
+        line-height: .1;
+        border: none;
+        
+
+        .nav-left {
+            // border: 1px solid green;
+
+            .btn-menu {
+                i {
+                    font-size: 2rem;
+                    font-weight: 500;
+                    color: $icon-btn-color-light;
+                }
+            }
+
+            .btn-icon {
+                i {
+                    font-size: 1.5rem; 
+                    font-weight: 500;
+                    color: $icon-btn-color-dark; 
+                }
+            }
+        }
+
+        .nav-right {
+            // border: 1px solid yellow;
+            .nav-btn {
+                i {
+                    color: $icon-btn-color-light;
+                    font-size: 2rem;
+                    font-weight: 500;
+                }
+            }
+            
+            img {
+                // border: 1px solid purple;
+                height: 1.6rem;
+                width: 1.6rem;
+                
+            }
+
+            .nav__img {
+                border: 2px solid $primary;
+                object-fit: cover;
+                border-radius: 8px;
+                margin-top: -2px;
+            }
+            
+        }
+
+    }
+    nav {
+        display: none;
+ 
+
+    }
+    
+
+    .side-menu {
+        display: none;
+        width: 150px;
+        transition: all 0.5s;
+
+        ul {
+            margin-top: 10px;
+
+            li {
+                display: flex;
+                padding: .3rem 1.4rem;
+                
+
+                a {
+                    
+                    i {
+                        display: none;
+                    }
+                    span {
+                        display: inherit;
+                        font-size: 1.2rem;
+                    }
+                }
+            }
+        }
+
+    }
+
+    main {
+        .card {
+            background-color: $dark;
+            padding: .4rem .8rem;
+            // line-height: 2;
+            border: none;
+            -moz-box-shadow: 0 10px 20px rgba(2, 2, 2, 0.19), 0 6px 6px rgba(0,0,0,0.23); 
+            -webkit-box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+            box-shadow: 0 10px 20px rgba(17, 17, 17, 0.19), 0 6px 6px rgba(2, 2, 2, 0.19);
+            display: flex;
+            justify-content: space-between;
+            align-items: stretch;
+            align-self: stretch;
+            margin: 0 auto;
+
+            &__title {
+                align-self: center;
+                font-size: 1.2rem;
+                color: $icon-btn-color-light;
+                font-weight: 500;
+            }
+
+            &__download {
+                align-self: center;
+                color: $icon-btn-color-light;
+                text-align: center;
+                // border: 1px solid red;
+                // transform: translateX(46px);
+
+
+
+                i {
+                    font-size: 2rem;
+                    font-weight: 500;
+                }
+            }
+
+            &__actions {
+                display: inline-flex;
+                align-items: stretch;
+
+                a i {
+                    font-size: 1.8rem;
+                    font-weight: 500;
+                    color: $icon-btn-color-light;
+                    margin-top: 3px;
+                    transform: translateX(46px);
+                }
+            }
+        }
+
+        .panel {
+            display: flex;
+            justify-content: flex-end;
+            align-items: stretch;
+            margin-top: 8px;
+            padding: 1rem;
+
+            &__download {
+                // border: 1px solid red;
+                margin-right: 10px;
+
+                i {
+                    font-size: 2.2rem;
+                    font-weight: 600;
+                    color: $icon-btn-color-light;
+                }
+            }
+
+            &__view {
+                // border: 1px solid blue;
+                
+                i {
+                    font-weight: 600;
+                    font-size: 2.2rem;
+                    color: $icon-btn-color-light;
+                }
+            }
+        }
+
+        .main-content {
+            border: none;
+            margin-top: 40px;
+            margin-left: 0px;
+        }
+    }
+}

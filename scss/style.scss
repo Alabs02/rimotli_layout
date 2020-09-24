@@ -1,0 +1,214 @@
+@import "./config";
+@import "./utilities";
+
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style-type: none;
+    box-sizing: border-box;
+    font-family: $font-stack;
+}
+
+body {
+    background: url(../assets/background.png) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    overflow: scroll;
+    overflow-x: hidden !important;
+    scrollbar-width: none !important;
+    -ms-overflow-style: none !important;
+}
+::-webkit-scrollbar {
+    width: 0px !important;
+    background: transparent !important;
+}
+.nav {
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #1f1f1e;
+    padding: .4rem;
+    line-height: 1;
+    width: 100%;
+    overflow: hidden;
+    z-index: 5;
+
+    &__logo {
+        // border: 2px solid red;
+        height: 25px;
+        width: 70px;
+
+        img {
+            height: 100%;
+            width: 100%;
+        }
+        &--img {
+            object-fit: contain;
+        }
+    }
+
+    &__avatar {
+        margin-right: 10px;
+
+        a {
+            margin-right: 5px;
+            i {
+                color: $icon-btn-color-light;
+                font-weight: 500;
+                font-size: 1.6rem;
+            }
+        }
+        
+        
+        
+        img {
+            height: 100%;
+            width: 100%;
+        }
+
+        .nav__img {
+            object-fit: cover;
+            height: 22px;
+            width: 22px;
+            border: #eeb430 1px solid;
+            border-radius: 8px;
+            
+        }
+    }
+}
+
+.side-menu {
+    position: fixed;
+    top: 40px;
+    background-color: #252524;
+    width: 120px;
+    height: 100%;
+    // border: 1px solid red;
+
+    ul {
+        margin-top: 50px;
+
+        li {
+            display: block;
+            transition: 0.5s;
+            padding: .3rem 1.5rem;
+            line-height: 1;
+            cursor: pointer;
+            background: #1f1f1e;
+            margin-bottom: 2px;
+
+
+            a {
+                color: #fff;
+                font-weight: 500;
+                font-size: .9rem;
+            }
+
+        }
+
+        li:hover {
+            background-color: #eeb430;
+            padding: .4rem 1.5rem;
+
+            a {
+                color: #1f1f1e;
+                font-weight: 600;
+                padding-left: .2rem;
+            }
+        }
+    }
+}
+
+main {
+    .card {
+        background-color: $dark;
+        padding: .4rem .8rem;
+        // line-height: 2;
+        border: none;
+        -moz-box-shadow: 0 10px 20px rgba(2, 2, 2, 0.19), 0 6px 6px rgba(0,0,0,0.23); 
+        -webkit-box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+        box-shadow: 0 10px 20px rgba(17, 17, 17, 0.19), 0 6px 6px rgba(2, 2, 2, 0.19);
+        display: flex;
+        justify-content: space-between;
+        align-items: stretch;
+        align-self: stretch;
+        margin: 0 auto;
+
+        &__title {
+            align-self: center;
+            font-size: 1.2rem;
+            color: $icon-btn-color-light;
+            font-weight: 500;
+        }
+
+        &__download {
+            align-self: center;
+            color: $icon-btn-color-light;
+            text-align: center;
+            
+
+            i {
+                font-size: 2rem;
+                font-weight: 500;
+            }
+        }
+
+        &__actions {
+            display: inline-flex;
+            align-items: stretch;
+
+            a i {
+                font-size: 1.8rem;
+                font-weight: 500;
+                color: $icon-btn-color-light;
+                margin-top: 3px;
+                transform: translateX(46px);
+            }
+        }
+    }
+
+    .panel {
+        display: flex;
+        justify-content: flex-end;
+        align-items: stretch;
+        margin-top: 8px;
+        padding: 1rem;
+
+        &__download {
+            // border: 1px solid red;
+            margin-right: 10px;
+
+            i {
+                font-size: 2.2rem;
+                font-weight: 600;
+                color: $icon-btn-color-light;
+            }
+        }
+
+        &__view {
+            // border: 1px solid blue;
+            
+            i {
+                font-weight: 600;
+                font-size: 2.2rem;
+                color: $icon-btn-color-light;
+            }
+        }
+    }
+}
+
+.main-content {
+    background-color: #29282e;
+    height: 100vh;
+    margin-top: 40px;
+}
+
+@import "./responsive/desktop_xl";
+@import "./responsive/desktop";
+@import "./responsive/tablet";
+@import "./responsive/mobile";

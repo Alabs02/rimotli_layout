@@ -1,0 +1,28 @@
+@media (max-width: 992px) { 
+    nav#nav-mobile {
+        display: none;
+    }
+
+    // .nav {
+       
+    // }
+
+    .side-menu {
+        ul {
+            li {
+                a {
+                    i {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+
+    main {
+        .main-content {
+            margin-left: 120px;
+            // border: 1px solid green;
+        }
+    }
+}
