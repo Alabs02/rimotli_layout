@@ -1,4 +1,7 @@
 @media (max-width: 600px) {
+    .nav {
+        display: none;
+    }
     nav#nav-mobile {
         display: flex;
         justify-content: space-between;

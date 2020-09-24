@@ -17,13 +17,13 @@ body {
     -o-background-size: cover;
     background-size: cover;
     overflow: scroll;
-    overflow-x: hidden !important;
+    overflow-x: hidden;
     scrollbar-width: none !important;
     -ms-overflow-style: none !important;
 }
 ::-webkit-scrollbar {
-    width: 0px !important;
-    background: transparent !important;
+    width: 0px;
+    background: transparent;
 }
 .nav {
     display: flex;
