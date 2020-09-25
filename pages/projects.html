@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="../css/style.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/roboto-fontface@0.10.0/css/roboto/roboto-fontface.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Outfit Page</title>
 </head>
 <body>
@@ -55,10 +56,8 @@
     <main>
         
         <div class="main-content">
-            <div class="card">
-             
+            <div class="card" id="card-mobile">
                 <div class="card__title">StarFest</div>
-         
                
                 <a href="#!" class="card__download"><i class="material-icons">cloud_download</i></a>
               
@@ -71,11 +70,76 @@
                       </div>
                 </div>
             </div>
+
+            <div class="card card-desktop" id="card-desktop">
+                <div class="card-left">
+                    <div class="card-left__brand"><span>Starfest</span></div>
+
+                    <div class="card-left__search">
+                        <form class="search">
+                            <i class="fa fa-search fa-sm search__icon"></i>
+                            <input placeholder="Search" type="text" name="search" id="search">
+                        </form>
+                    </div>
+
+                    <div class="card-left__dropdown">
+                        <div class="card-left__dropdown-btn">
+                            <p>Sort</p>
+                            <i class="fas fa-sort-down fa-sm arrow"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-right">
+                    <div class="card-right__btn--share">
+                        <a href="#!" class="btn">
+                            <span>Share</span>
+                        </a>
+                    </div>
+
+                    <div class="card-right__btn--add">
+                        <a href="#!" class="btn"><i class="material-icons">control_point</i></a>
+                    </div>
+
+                    <div class="card-right__avatar">
+                        <img class="profile-image" src="../assets/avatar.jpeg" alt="...">
+                    </div>
+                    <div class="card-right__avatar">
+                        <img class="profile-image" src="../assets/avatar.jpeg" alt="...">
+                    </div>
+                    <div class="card-right__avatar">
+                        <img class="profile-image" src="../assets/avatar.jpeg" alt="...">
+                    </div>
+                    <div class="card-right__avatar">
+                        <img class="profile-image" src="../assets/avatar.jpeg" alt="...">
+                    </div>
+                </div>
+            </div>
+
+            <div class="dropdown-items" style="display: none;">
+                <a href="#" id="adobeXd">Date</a>
+                <div class="drop-divider"></div>
+                <a href="#" id="sketch">Name</a>
+                <div class="drop-divider"></div>
+                <a href="#" id="figma">Type</a>
+                <div class="drop-divider"></div>
+                <a href="#" id="inVision">Size</a>
+            </div>
+
+
             <div class="panel">
                 <a href="#!" class="panel__download"><i class="material-icons">import_export</i></a>
                 <a href="#!" class="panel__view"><i class="material-icons">list</i></a>
             </div>
+
+            <div class="body">
+             
+            </div>
         </div>
     </main>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="../scripts/app.js"></script>
 </body>
 </html>

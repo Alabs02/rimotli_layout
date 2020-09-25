@@ -5,11 +5,11 @@
 }
 
 .profile-image {
-	height: 2rem;
-	width: 2rem;
+	height: 1.5rem;
+	width: 1.5rem;
 	object-fit: cover;
 	border: 1px solid $primary;
-	border-radius: 10px;
+	border-radius: 8px;
 }
 
 .collaborator {
@@ -26,4 +26,9 @@
 			transform: translateX(70%);
 		}
 	}
+}
+
+.dropdown {
+
+	display: none;
 }
