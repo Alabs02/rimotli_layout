@@ -78,12 +78,12 @@
 
                     &__brand {
                         align-items: baseline;
-                        transform: translateY(11px);
+                        transform: translateY(5px);
                         // margin-top: 12px;
                         // border: 1px solid cyan;
 
                         span {
-                            font-weight: 400;
+                            font-weight: normal;
                             font-size: 1rem;
                             color: $white;
                             letter-spacing: .5pt;
@@ -97,30 +97,6 @@
                         form {
                             position: relative;
                             display: flex;
-                            transition: all 0.5s ease-in;
-
-                            .search__icon {
-                                position: absolute;
-                                top: 8px;
-                                left: 8px;
-                                width: 5px;
-                                color: $icon-btn-color-dark;
-                            }
-                            
-
-                            input[type=text] {
-                                background: #1f1f1e;
-                                border: none;
-                                outline: none;
-                                border-radius: 5px;
-                                padding: .4rem .4rem .4rem 2rem;
-                                color: #252524;
-                                font-size: .8rem;
-                                width: 16rem;
-                                box-shadow: 
-                                    inset 0px 11px 8px -10px rgb(32, 32, 32),
-                                    inset 0px -11px 8px -10px rgb(32, 32, 32);
-
                             }
                         }
                             
