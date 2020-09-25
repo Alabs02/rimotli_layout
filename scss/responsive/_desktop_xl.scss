@@ -39,7 +39,7 @@
 
     .side-menu {
         ul {
-            margin-top: 55px;
+            margin-top: 62px;
             li {
                 padding: .4rem 1.4rem;
 
@@ -67,7 +67,7 @@
             .card.card-desktop {
                 // border: 1px solid red;
                 margin-top: 54px;
-                padding:.8rem 2rem .8rem 1rem;
+                padding:1rem 2rem 1rem 1rem;
 
                 // Left side
                 .card-left {
@@ -77,11 +77,14 @@
                     // border: 1px solid green;
 
                     &__brand {
+                        align-items: baseline;
+                        transform: translateY(11px);
+                        // margin-top: 12px;
                         // border: 1px solid cyan;
 
                         span {
                             font-weight: 400;
-                            font-size: large;
+                            font-size: 1rem;
                             color: $white;
                             letter-spacing: .5pt;
                         }
@@ -111,7 +114,7 @@
                                 outline: none;
                                 border-radius: 5px;
                                 padding: .4rem .4rem .4rem 2rem;
-                                color: $icon-btn-color-light;
+                                color: #252524;
                                 font-size: .8rem;
                                 width: 16rem;
                                 box-shadow: 
@@ -217,6 +220,8 @@
 
                 .card-right {
                     display: inline-flex;
+                    justify-content: end;
+                    align-items: flex-end;
                     padding: 0rem;
                     // border: 1px solid green;
 
@@ -245,6 +250,7 @@
                     }
 
                     &__btn--add {
+                        transform: translateY(5px);
                         // border: 1px solid chocolate;
 
                         .btn {
@@ -259,6 +265,7 @@
                     }
 
                     &__avatar {
+                        transform: translateY(5px);
                         // border: 1px solid yellow;
                         &:nth-child(n+2) {
                            margin: 0;
