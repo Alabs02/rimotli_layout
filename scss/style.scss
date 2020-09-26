@@ -100,13 +100,12 @@ body {
             line-height: 1;
             cursor: pointer;
             background: #1f1f1e;
-            font-weight: lighter;
             margin-bottom: 2px;
 
 
             a {
                 color: #fff;
-                font-weight: lighter;
+                font-weight: 300;
                 font-size: .9rem;
             }
 
@@ -118,8 +117,9 @@ body {
 
             a {
                 color: #1f1f1e;
-                font-weight: 600;
+                font-weight: 400;
                 padding-left: .2rem;
+                // border-bottom-left-radius: ;
             }
         }
     }
