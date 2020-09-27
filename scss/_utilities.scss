@@ -10,11 +10,15 @@
 	object-fit: cover;
 	border: 1px solid $primary;
 	border-radius: 8px;
+	margin: 0;
+	padding: 0;
 }
 
 .collaborator {
-	display: flex;
-	margin-right: 0.5rem;
+	display: inline-flex;
+	// margin-right: 0.5rem;
+	margin: 0;
+	padding: 0;
 
 	.collaborator__image {
 		&:nth-child(1) {
@@ -32,3 +36,25 @@
 
 	display: none;
 }
+
+
+
+.body {
+	margin: 0rem 2rem 0rem 2rem;
+
+	.folder-card {
+		height: 200px;
+		width: 150px;
+		background-color: #ccc;
+		border-radius: .5em .5em 0em 0em;
+		border-top-right-radius: 2.5em;
+		clip-path: polygon(0 0, 1% 100%, 100% 100%, 100% 15%, 98% 15%, 56% 15%, 50% 13%, 34% 1%, 26% 0);
+	}
+}
+
+
+
+// clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 19%, 65% 20%, 61% 19%, 44% 0);
+// clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 18%, 57% 19%, 51% 12%, 41% 0);
+// clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 18%, 57% 19%, 49% 11%, 38% 0);
+// clip-path: polygon(0 0, 0 100%, 100% 100%, 0 6%, 0 100%, 100% 100%, 100% 20%, 94% 20%, 48% 19%, 44% 9%, 36% 1%, 28% 0);

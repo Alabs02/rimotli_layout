@@ -1,0 +1,44 @@
+%btn-icon {
+	background: transparent;
+	border: none;
+	color: $icon-btn-color-light;
+    // padding: 5px 10px;
+    padding: 0.25em 0.75em;
+    border-radius: 50%;
+    cursor: pointer;
+    
+    i {
+        font-size: 30px;
+        font-weight: 500;
+    }
+}
+
+.btn-menu {
+    @extend %btn-icon;
+}
+.btn-notification {
+    @extend %btn-icon;
+}
+.btn-download {
+    @extend %btn-icon;
+    padding: 0;
+    margin: 0;
+    transform: translateX(70%);
+}
+.btn-add {
+    @extend %btn-icon;
+    margin: 0;
+    padding: 0;
+    transform: translateX(140%);
+    outline: none;
+
+    i {
+        font-size: 26px;
+    }
+
+    &:focus {
+        outline: none;
+        border: none;
+    }
+}
+

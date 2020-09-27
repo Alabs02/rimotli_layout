@@ -13,16 +13,26 @@
     <header>
         <nav class="nav" id="nav-mobile">
             <div class="nav-left">
-                <a href="#!" class="btn-menu" id="menu">
+
+                <a href="#!" class="btn-menu">
                     <i class="material-icons">sort</i>
                 </a>
-                <a href="#!" class="btn-icon">
-                    <i class="material-icons">search</i>
-                </a>
+                <!-- <a href="#!" class="btn-menu" id="menu">
+                    <i class="material-icons">sort</i>
+                </a> -->
+                <!-- <a href="#!" class="btn-search">
+                    <i class="fas fa-search"></i>
+                </a> -->
+                <div class="search-box">
+                    <form class="search-bar">
+                        <input type="text" name="search-bar__input" placeholder="Search" />
+                        <i class="fas fa-search"></i>
+                    </form>
+                </div>
             </div>
 
             <div class="nav-right">
-                <a href="#!" class="nav-btn">
+                <a href="#!" class="btn-notification">
                     <i class="material-icons">notifications_none</i>
                 </a>
               
@@ -57,17 +67,26 @@
         
         <div class="main-content">
             <div class="card" id="card-mobile">
-                <div class="card__title">StarFest</div>
+                <div class="card__title">
+                    <span>Starfest</span>
+                </div>
                
-                <a href="#!" class="card__download"><i class="material-icons">cloud_download</i></a>
+                <div class="card__download">
+                    <button class="btn-download">
+                        <i class="material-icons">cloud_download</i>
+                    </button>
+                </div>
               
+               
                 <div class="card__actions">
-                    <a href="#!"><i class="material-icons">add_circle_outline</i></a>
-                    <div class="collaborator" >
-                        <img class="profile-image collaborator__image" src="../assets/avatar.jpeg" alt="collaborator img">
-                        <img class="profile-image collaborator__image" src="../assets/avatar.jpeg" alt="collaborator img">
-                        <img class="profile-image collaborator__image" src="../assets/avatar.jpeg" alt="collaborator img">
-                      </div>
+                    <div style="transform: translateY(5px);">
+                        <button class="btn-add"><i class="material-icons">add_circle_outline</i></button>
+                    </div>
+                    <div class="collaborator">
+                        <img src="../assets/avatar.jpeg" class="profile-image collaborator__image" alt="">
+                        <img src="../assets/avatar.jpeg" class="profile-image collaborator__image" alt="">
+                        <img src="../assets/avatar.jpeg" class="profile-image collaborator__image" alt="">
+                    </div>
                 </div>
             </div>
 
@@ -133,7 +152,9 @@
             </div>
 
             <div class="body">
-             
+                <!-- <div class="folder-card">
+                    
+                </div> -->
             </div>
         </div>
     </main>

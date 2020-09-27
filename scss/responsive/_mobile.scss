@@ -2,58 +2,114 @@
     .nav {
         display: none;
     }
+
+    #card-desktop {
+        display: none;
+
+    }
+
+    #card-mobile {
+        display: flex !important;
+        margin-top: 54px;
+    }
+
     nav#nav-mobile {
         display: flex;
         justify-content: space-between;
-        padding: .3rem .8rem;
+        // padding: .7rem .8rem;
+        padding: .68rem .8rem .68rem 0rem;
+        margin: 0;
         line-height: .1;
         border: none;
+        // border: 1px solid red;
         
 
         .nav-left {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 0;
+            padding: 0;
             // border: 1px solid green;
 
-            .btn-menu {
-                i {
-                    font-size: 2rem;
-                    font-weight: 500;
+            .search-bar {
+                display: inline-flex;
+                border: none;
+                transition: all 1s;
+                box-sizing: border-box;
+                border-radius: 20px;
+                padding: 5px;
+                background: $dark;
+                box-shadow: inset 0 0 1px 0px rgb(14, 14, 14);
+
+                input[type=text] {
+                    border: 1px solid purple;
+                    width: 100%;
+                    height: 28px;
+                    // line-height: 30px;
+                    outline: 0;
+                    border: 0;
+                    display: none;
+                    font-size: .8rem;
+                    border-radius: 20px;
+                    padding: 0 18px 0px 15px;
+                    background: #1E1E1C;
                     color: $icon-btn-color-light;
+                }
+
+                .fas {
+                    box-sizing: border-box;
+                    border-radius: 50%;
+                    padding: 5px 5px;
+                    text-align: center;
+                    color: $icon-btn-color-light;
+                    font-size: .8em;
+                    transition: all .7s;
+                }
+
+                &:hover {
+                    width: 100%;
+                    cursor: pointer;
+                }
+
+                &:hover input {
+                    display: flex;
+                }
+
+                &:hover .fas {
+                    position: absolute;
+                    top: 18px;
+                    left: 229px;
+                    background-color: $icon-btn-color-light;
+                    color:  #1E1E1C;
                 }
             }
 
-            .btn-icon {
-                i {
-                    font-size: 1.5rem; 
-                    font-weight: 500;
-                    color: $icon-btn-color-dark; 
-                }
+            .btn-search {
+                border: 1px solid yellow;
             }
+
+
         }
 
         .nav-right {
-            // border: 1px solid yellow;
-            .nav-btn {
-                i {
-                    color: $icon-btn-color-light;
-                    font-size: 2rem;
-                    font-weight: 500;
-                }
-            }
+            display: inline-flex;
+            justify-content: space-around;
+            align-items: center;
+            // border: 1px solid green;
+            padding: 0;
+            margin: 0;
             
             img {
-                // border: 1px solid purple;
-                height: 1.6rem;
-                width: 1.6rem;
-                
+                height: 1.4rem;
+                width: 1.4rem;
             }
 
             .nav__img {
-                border: 2px solid $primary;
+                border: 1.5px solid $primary;
                 object-fit: cover;
                 border-radius: 8px;
-                margin-top: -2px;
             }
-            
         }
 
     }
@@ -96,50 +152,29 @@
         .card {
             background-color: $dark;
             padding: .4rem .8rem;
-            // line-height: 2;
             border: none;
             -moz-box-shadow: 0 10px 20px rgba(2, 2, 2, 0.19), 0 6px 6px rgba(0,0,0,0.23); 
             -webkit-box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
             box-shadow: 0 10px 20px rgba(17, 17, 17, 0.19), 0 6px 6px rgba(2, 2, 2, 0.19);
             display: flex;
             justify-content: space-between;
-            align-items: stretch;
-            align-self: stretch;
-            margin: 0 auto;
+            align-items: center;
+            margin: 0;
 
             &__title {
-                align-self: center;
-                font-size: 1.2rem;
-                color: $icon-btn-color-light;
-                font-weight: 500;
+                display: inline-flex;
+                // border: 1px solid yellow;
             }
 
             &__download {
-                align-self: center;
-                color: $icon-btn-color-light;
-                text-align: center;
-                // border: 1px solid red;
-                // transform: translateX(46px);
-
-
-
-                i {
-                    font-size: 2rem;
-                    font-weight: 500;
-                }
+                display: inline-flex;
+                // border: 1px solid yellow;
             }
 
             &__actions {
                 display: inline-flex;
-                align-items: stretch;
-
-                a i {
-                    font-size: 1.8rem;
-                    font-weight: 500;
-                    color: $icon-btn-color-light;
-                    margin-top: 3px;
-                    transform: translateX(46px);
-                }
+                align-items: flex-end;
+                // border: 1px solid yellow;
             }
         }
 
@@ -148,14 +183,15 @@
             justify-content: flex-end;
             align-items: stretch;
             margin-top: 8px;
-            padding: 1rem;
+            padding: 0.2rem;
+            // border: 1px solid yellow;
 
             &__download {
                 // border: 1px solid red;
                 margin-right: 10px;
 
                 i {
-                    font-size: 2.2rem;
+                    font-size: 1.8rem;
                     font-weight: 600;
                     color: $icon-btn-color-light;
                 }
@@ -166,7 +202,7 @@
                 
                 i {
                     font-weight: 600;
-                    font-size: 2.2rem;
+                    font-size: 2rem;
                     color: $icon-btn-color-light;
                 }
             }
