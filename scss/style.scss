@@ -2,6 +2,10 @@
 @import "./utilities";
 @import "./icon-btn";
 
+html {
+    scroll-behavior: smooth;
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -128,6 +132,8 @@ body {
 
 main {
     .card {
+        position: -webkit-sticky; /* Safari */
+        position: sticky;
         background-color: $dark;
         padding: .4rem .8rem;
         // line-height: 2;

@@ -39,17 +39,208 @@
 
 
 
-.body {
-	margin: 0rem 2rem 0rem 2rem;
+.responsive-container {
+	display: block;
+	max-width: 90%;
+	max-height: 90%;
+	margin: 0px 50px;
+}
+
+
+
+.grid-body {
+	// margin: 0rem 2rem 0rem 2rem;
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+	grid-gap: 20px;
+	grid-auto-rows: auto;
+	align-items: start;
+
 
 	.folder-card {
-		height: 200px;
-		width: 150px;
-		background-color: #ccc;
-		border-radius: .5em .5em 0em 0em;
-		border-top-right-radius: 2.5em;
-		clip-path: polygon(0 0, 1% 100%, 100% 100%, 100% 15%, 98% 15%, 56% 15%, 50% 13%, 34% 1%, 26% 0);
+		background: url(../assets/folder1.svg) no-repeat center center;
+		color: #cccccc;
+		background-size: contain;
+		height: 225px;
+		width: 200px;
+		padding: 1.9rem .5rem .2rem .5rem;
+		// border: 1px solid red;
+		// background: transparent;
+
+		&__gallery {
+			border-radius: 0px 10px 10px 0px;
+			box-shadow: 0 0 3px rgb(3, 3, 3);
+			height: 125px;
+
+			
+
+			.row {
+				// border: 1px solid blue;
+				border-radius: 0px 10px 10px 0px;
+				display: -ms-flexbox;
+				display: flex;
+				-ms-flex-wrap: wrap;
+				flex-wrap: wrap;
+				padding: 0px 0px;
+
+				.column1 {
+					// border: 1px solid blue;
+					-ms-flex: 1;
+					flex: 1;
+					flex-direction: column;
+					max-width: 60% !important;
+					padding: 0px 1px;
+					height: 124px;
+
+					& img {
+						object-fit: cover;
+						vertical-align: middle;
+						width: 100%;
+						height: 100%;
+						// border: 1px solid blue;
+					}
+				}
+
+				.column2 {
+					// border: 1px solid red;
+					-ms-flex: 2;
+					flex: 2;
+					padding: 0px 1px;
+					max-width: 40% !important;
+					height: 124px;
+
+					// .overlay {
+					// 	position: absolute; 
+					// 	top: 0;
+					// 	bottom: 0; 
+					// 	background: rgb(0, 0, 0);
+					// 	background: rgba(0, 0, 0, 0.5); /* Black see-through */
+					// 	color: #a3a3a3; 
+					// 	width: 100%;
+					// 	height: 100%;
+					// 	transition: .5s ease;
+					// 	opacity:0;
+					// 	color: white;
+					// 	font-size: 20px;
+					// 	text-align: center;
+					// }
+					.overlay {
+						background: rgba(0, 0, 0, 0.9); /* Black see-through */
+						border-radius: 10px;
+					}
+
+					img:last-of-type {
+						position: relative;
+						opacity: 0.4;
+					}
+
+					
+					& img {
+						object-fit: cover;
+						vertical-align: middle;
+						width: 100%;
+						height: 60px;
+						border-radius: 10px;
+					}
+				}
+			}
+		}
+
+		&__desc {
+			// border: 1px solid red;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			// margin-top: 8px;
+			padding: 10px 0px 0px 10px;
+
+			.info {
+				// border: 1px solid blue;
+				display: inline-block;
+
+				&__name {
+					font-size: small;
+					font-weight: 600;
+					color: $folder-secondary-color;
+				}
+
+				&__activity {
+					font-size: x-small;
+					font-weight: 300;
+					color: $folder-secondary-color;
+				}
+
+			}
+
+			.action {
+				display: inline-flex;
+				justify-content: flex-end;
+				align-items: flex-end;
+				// border: 1px solid purple;
+
+				&__btn {
+					border-radius: 50%;
+					border: none;
+					outline: none;
+					background-color: transparent;
+					color: $folder-secondary-color;
+					transform: translateX(5px);
+					cursor: pointer;
+				}
+			}
+		}
+
+		&__actions {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			// border: 1px solid purple;
+			padding: 0px 6px 0px 10px;
+			margin-top: 10px; 
+
+			.media {
+
+				.media-actions {
+					background-color: transparent;
+					border-radius: 5px;
+					border: none;
+					outline: none;
+					padding: 0px .5px 0px .5px;
+					cursor: pointer;
+
+					i {
+						color: $folder-secondary-color;
+					}
+				}
+			}
+
+			.others {
+				display: flex;
+				justify-content: space-between;
+
+				.others-btn {
+					background-color: transparent;
+					border-radius: 5px;
+					border: none;
+					outline: none;
+					cursor: pointer;
+
+					i {
+						color: #999;
+					}
+				}
+			}
+		}
 	}
+
+	// .folder-card {
+	// 	height: 200px;
+	// 	width: 150px;
+	// 	background-color: #ccc;
+	// 	border-radius: .5em .5em 0em 0em;
+	// 	border-top-right-radius: 2.5em;
+	// 	clip-path: polygon(0 0, 1% 100%, 100% 100%, 100% 15%, 98% 15%, 56% 15%, 50% 13%, 34% 1%, 26% 0);
+	// }
 }
 
 
