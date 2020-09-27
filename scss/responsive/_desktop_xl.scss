@@ -319,7 +319,7 @@
                 span {
                     // font-weight: 600;
                     font-size: 1rem;
-                    color: $white;
+                    color: $icon-btn-color-light;
                     letter-spacing: .5pt;
                 }
             }
@@ -346,7 +346,7 @@
                         outline: none;
                         border-radius: 5px;
                         padding: .4rem .4rem .4rem 2rem;
-                        color: #252524;
+                        color: $icon-btn-color-light;
                         font-size: .8rem;
                         width: 16rem;
                         box-shadow: inset 0px 11px 8px -10px #202020, inset 0px -11px 8px -10px #202020;
@@ -372,7 +372,8 @@
 
                     p {
                         display: inline;
-                        color: $white;
+                        color: $icon-btn-color-light;
+
                     }
 
                     i {
@@ -484,7 +485,7 @@
 
                 .btn {
                     i {
-                        color: $white;
+                        color: $icon-btn-color-light;
                     }
                 }
 

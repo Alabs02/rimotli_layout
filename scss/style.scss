@@ -179,15 +179,15 @@ main {
         justify-content: flex-end;
         align-items: stretch;
         margin-top: 8px;
-        padding: 1rem;
+        padding: .6rem;
 
         &__download {
             // border: 1px solid red;
-            margin-right: 10px;
+            margin-right: 8px;
 
             i {
-                font-size: 2.2rem;
-                font-weight: 600;
+                font-size: 2rem;
+                font-weight: 500;
                 color: $icon-btn-color-light;
             }
         }
@@ -196,7 +196,7 @@ main {
             // border: 1px solid blue;
             
             i {
-                font-weight: 600;
+                font-weight: 500;
                 font-size: 2.2rem;
                 color: $icon-btn-color-light;
             }
